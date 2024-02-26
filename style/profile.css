@@ -1,0 +1,40 @@
+.profile {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_txt {
+  flex: 1;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.greetings {
+  color: var(--p-yellow);
+  font-size: 33px;
+}
+
+.name {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 85px;
+  font-weight: 900;
+}
+
+.position {
+  font-size: 30px;
+}
+
+.profile_img {
+  flex: 1;
+  height: 100%;
+}
+
+.profile_img img {
+  height: 500px;
+  border: none;
+}

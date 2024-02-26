@@ -1,0 +1,96 @@
+.about_me {
+  width: 100%;
+  height: 570px;
+  background-color: var(--p-blue1);
+  display: flex;
+  flex-direction: column;
+}
+
+.about_me_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.about_me_nav_link {
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+  height: 100%;
+  background-color: var(--p-blue3);
+}
+
+.about_me_nav_link:hover {
+  background-color: var(--p-yellow);
+  color: black;
+}
+
+.about_me_nav_link1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: black;
+  cursor: pointer;
+  height: 100%;
+  background-color: var(--p-yellow);
+}
+
+.about_me_body {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.about_me_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.about_me_image img {
+  height: 400px;
+}
+
+.about_me_txt {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.abt_head {
+  font-size: 12px;
+  color: var(--p-yellow);
+}
+
+.abt_p1 {
+  margin-top: -5px;
+  margin-bottom: -1px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.abt_p {
+  font-size: 13px;
+}
+
+.learn_btn {
+  margin-top: 35px;
+  background-color: transparent;
+  border-radius: 2px;
+  border-color: var(--p-yellow);
+  color: var(--p-yellow);
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+}

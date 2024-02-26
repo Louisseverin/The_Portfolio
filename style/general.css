@@ -1,0 +1,7 @@
+body {
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: var(--p-blue2);
+  color: var(--p-white);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

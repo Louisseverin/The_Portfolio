@@ -1,0 +1,130 @@
+.test_container {
+  right: 0;
+  left: 0;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-top: 50px;
+  height: 460px;
+  padding-bottom: 40px;
+  background-color: var(--p-blue3);
+  position: absolute;
+}
+.testimony_head {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.testimony_head_txt {
+  width: 350px;
+  padding-top: 40px;
+}
+
+.t_txt1 {
+  font-size: 12px;
+  margin-bottom: -30px;
+  color: var(--p-yellow);
+}
+
+.t_txt2 {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.testimony_head_btn {
+  width: 90px;
+  justify-content: center;
+  align-self: center;
+}
+
+.tleft_btn,
+.tright_btn {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-color: var(--p-yellow);
+  border-radius: 2px;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.tleft_btn img,
+.tright_btn img {
+  height: 22px;
+}
+
+.tright_btn {
+  margin-left: -5px;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.test_content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--p-blue1);
+  height: 200px;
+  flex: 1;
+  padding: 25px;
+  border: 1px solid var(--p-yellow);
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.test_content_head {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+}
+
+.test_pic {
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.test_pic img {
+  height: 50px;
+  border-radius: 60px;
+}
+
+.test_head_txt {
+  flex: 1;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.test_name {
+  margin-top: -1px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: -10px;
+}
+
+.test_position {
+  font-size: 10px;
+  color: var(--p-yellow);
+}
+
+.comment_icon {
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment_icon img {
+  height: 35px;
+}
+
+.test_body_txt {
+  flex: 1;
+  font-size: 15px;
+  font-style: italic;
+}

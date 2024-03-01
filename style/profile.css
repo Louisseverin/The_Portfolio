@@ -3,6 +3,7 @@
   height: 500px;
   display: flex;
   flex-direction: row;
+  max-width: 1920px;
 }
 
 .profile_txt {
@@ -37,4 +38,10 @@
 .profile_img img {
   height: 500px;
   border: none;
+}
+
+@media (max-width: 500px) {
+  .profile_img {
+    display: none;
+  }
 }

@@ -1,3 +1,9 @@
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+}
 .project_head {
   width: 100%;
   height: 150px;
@@ -5,6 +11,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
 }
 
 .project_head_txt {
@@ -60,10 +68,11 @@
 }
 
 .project_content {
-  height: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
 }
 
 .content {
@@ -151,4 +160,12 @@
 .content_btn1 img {
   height: 15px;
   width: 30px;
+}
+
+@media (max-width: 500px) {
+  .project_content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

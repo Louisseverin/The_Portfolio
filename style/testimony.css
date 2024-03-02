@@ -137,4 +137,7 @@
     align-items: center;
     justify-content: center;
   }
+  .t_txt2 {
+    font-size: 27px;
+  }
 }

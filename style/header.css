@@ -106,13 +106,18 @@
 
 @media (max-width: 500px) {
   .chat_btn {
-    font-size: 10px;
+    font-size: 8px;
     width: 75px;
+    height: 30px;
   }
   .logo_text,
   .nav_content,
   .nav_default_txt {
-    font-size: 12px;
-    width: 75px;
+    font-size: 8px;
+  }
+  .nav_content,
+  .nav_default,
+  .chat_board {
+    width: 50px;
   }
 }

@@ -15,14 +15,10 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 350px) and (max-width: 580px) {
   body {
     padding-left: 30px;
     padding-right: 30px;
-    align-items: center;
-    justify-content: center;
-  }
-  .large_display {
     align-items: center;
     justify-content: center;
   }

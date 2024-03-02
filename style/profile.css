@@ -40,7 +40,7 @@
   border: none;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 350px) and (max-width: 580px) {
   .profile_img {
     display: none;
   }

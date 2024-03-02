@@ -104,7 +104,7 @@
   font-size: 14px;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 350px) and (max-width: 580px) {
   .chat_btn {
     font-size: 8px;
     width: 75px;

@@ -4,7 +4,7 @@ body {
   background-color: var(--p-blue2);
   color: var(--p-white);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 3000px;
+  height: 5000px;
 }
 
 .large_display {
@@ -19,6 +19,24 @@ body {
   body {
     padding-left: 30px;
     padding-right: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  body {
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1027px) {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
     align-items: center;
     justify-content: center;
   }

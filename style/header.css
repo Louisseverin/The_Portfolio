@@ -121,3 +121,21 @@
     width: 50px;
   }
 }
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .chat_btn {
+    font-size: 8px;
+    width: 75px;
+    height: 30px;
+  }
+  .logo_text,
+  .nav_content,
+  .nav_default_txt {
+    font-size: 12px;
+  }
+  .nav_content,
+  .nav_default,
+  .chat_board {
+    width: 70px;
+  }
+}

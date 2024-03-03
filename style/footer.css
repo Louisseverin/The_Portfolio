@@ -82,9 +82,58 @@
   height: 40px;
   width: 150px;
   font-size: 14px;
+  right: 0;
 }
 
 .ft_chat_btn:hover {
   background-color: var(--p-yellow);
   color: var(--p-blue3);
+}
+
+@media (min-width: 350px) and (max-width: 580px) {
+  .footer_logo_img img {
+    height: 15px;
+  }
+  .footer_logo_text {
+    font-size: 15px;
+  }
+  .footer_content_head {
+    font-size: 20px;
+  }
+  .ft_nav_content {
+    width: fit-content;
+    font-size: 8px;
+  }
+  .ft_chat_btn {
+    height: fit-content;
+    width: fit-content;
+    font-size: 8px;
+  }
+  .footer_content_nav {
+    gap: 5px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .footer_logo_img img {
+    height: 20px;
+  }
+  .footer_logo_text {
+    font-size: 20px;
+  }
+  .footer_content_head {
+    font-size: 30px;
+  }
+  .ft_nav_content {
+    width: fit-content;
+    font-size: 10px;
+  }
+  .ft_chat_btn {
+    height: fit-content;
+    width: fit-content;
+    font-size: 10px;
+  }
+  .footer_content_nav {
+    gap: 5px;
+  }
 }

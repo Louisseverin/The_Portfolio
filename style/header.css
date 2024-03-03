@@ -59,7 +59,6 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  height: 100px;
 }
 
 .nav_default_txt {
@@ -120,11 +119,40 @@
   .nav_content,
   .nav_default_txt {
     font-size: 8px;
+    color: var(--p-white);
   }
   .nav_content,
-  .nav_default,
-  .chat_board {
+  .nav_default {
     width: 50px;
+    background-color: var(--p-blue1);
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: var(--p-yellow);
+  }
+
+  .nav_content:hover,
+  .nav_default:hover {
+    background-color: var(--p-yellow);
+    color: var(--p-blue1);
+  }
+  .nav_link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: fit-content;
+    width: fit-content;
+    gap: 10px;
+    position: relative;
+  }
+  .chat_board {
+    display: none;
+  }
+  .nav_default_img {
+    display: none;
+  }
+  .nav_default_txt {
+    margin-top: 0px;
   }
 }
 

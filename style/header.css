@@ -102,6 +102,12 @@
   height: 40px;
   width: 150px;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.chat_btn:hover {
+  background-color: var(--p-yellow);
+  color: var(--p-blue3);
 }
 
 @media (min-width: 350px) and (max-width: 580px) {

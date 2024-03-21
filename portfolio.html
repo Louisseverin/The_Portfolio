@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portofolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
     <link rel="stylesheet" href="style/colors.css" />
     <link rel="stylesheet" href="style/general.css" />
     <link rel="stylesheet" href="style/header.css" />
@@ -24,8 +26,21 @@
           </div>
           <div class="logo_text">Growth</div>
         </div>
-        <div class="nav_link">
-          <div class="nav_content">ABOUT</div>
+
+          <ul class="nav_link" id="dropdownContent">
+            <li><a href="#" class="nav_content">ABOUT</a></li>
+            <li><a href="#" class="nav_content">WORKS</a></li>
+            <li><a href="#" class="nav_content">CASE STUDY</a></li>
+            <li><a href="#" class="nav_content">CLIENTS</a></li>
+            <li><a href="#" class="nav_content">CONTACT</a></li>
+          </ul>
+
+          <div class="dropbtn" id="dropdownBtn">
+            <img src="icons/menu-svgrepo-com.png">
+          </div>
+
+
+          <!-- <div class="nav_content">ABOUT</div>
           <div class="nav_default">
             <div class="nav_default_txt">WORKS</div>
             <div class="nav_default_img">
@@ -34,8 +49,9 @@
           </div>
           <div class="nav_content">CASE STUDY</div>
           <div class="nav_content">CLIENTS</div>
-          <div class="nav_content">CONTACT</div>
-        </div>
+          <div class="nav_content">CONTACT</div> -->
+
+
         <div class="chat_board">
           <button class="chat_btn">LET'S CHAT</button>
         </div>
@@ -320,5 +336,7 @@
         </div>
       </div>
     </div>
+
+    <script src="js/nav.js"></script>
   </body>
 </html>

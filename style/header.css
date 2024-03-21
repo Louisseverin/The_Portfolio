@@ -5,6 +5,7 @@
   height: 60px;
   width: 100%;
   max-width: 1920px;
+  gap: 20px;
 }
 
 /*left side */
@@ -42,6 +43,12 @@
   justify-content: flex-end;
   align-items: center;
   flex: 1;
+  list-style-type: none;
+  gap: 30px
+}
+a{
+  text-decoration: none;
+  color: var(--p-white);
 }
 
 .nav_content {
@@ -49,57 +56,41 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: fit-content;
   font-size: 14px;
-}
-
-.nav_default {
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav_default_txt {
-  color: var(--p-yellow);
-  margin-top: 10px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: fit-content;
-}
-
-.nav_default_img {
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav_default_img img {
-  height: 10px;
+  transition: 1s ease;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .nav_content:hover {
-  color: var(--p-yellow);
+  background-color: var(--p-yellow);
+  color: black;
+}
+
+.dropbtn{
+  display: none;
+}
+
+.dropbtn img{
+  height: 20px;
+  cursor: pointer;
 }
 
 .chat_board {
-  width: 200px;
+  width: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .chat_btn {
+  width: fit-content;
   background-color: transparent;
   border-radius: 2px;
   border-color: var(--p-yellow);
   color: var(--p-yellow);
   height: 40px;
-  width: 150px;
   font-size: 14px;
   cursor: pointer;
 }
@@ -109,7 +100,7 @@
   color: var(--p-blue3);
 }
 
-@media (min-width: 350px) and (max-width: 580px) {
+/* @media (min-width: 350px) and (max-width: 580px) {
   .chat_btn {
     font-size: 8px;
     width: 75px;
@@ -154,22 +145,36 @@
   .nav_default_txt {
     margin-top: 0px;
   }
-}
+} */
 
-@media (min-width: 600px) and (max-width: 800px) {
-  .chat_btn {
-    font-size: 8px;
-    width: 75px;
-    height: 30px;
+@media (max-width: 800px) {
+  .chat_board{
+    display: none;
   }
-  .logo_text,
-  .nav_content,
-  .nav_default_txt {
-    font-size: 12px;
+  .dropbtn{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
   }
-  .nav_content,
-  .nav_default,
-  .chat_board {
-    width: 70px;
+  .nav_link{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 300px;
+    background-color: var(--p-trans);
+    transition: 0.5s;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .nav_link.active{
+    opacity: 1;
   }
 }

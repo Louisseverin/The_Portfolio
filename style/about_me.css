@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   max-width: 1920px;
+  gap: 10px;
 }
 
 .about_me_nav {
@@ -25,27 +26,23 @@
   background-color: var(--p-blue3);
 }
 
+.active{
+  background-color: var(--p-yellow);
+  color: black;
+}
+
 .about_me_nav_link:hover {
   background-color: var(--p-yellow);
   color: black;
 }
 
-.about_me_nav_link1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  color: black;
-  cursor: pointer;
-  height: 100%;
-  background-color: var(--p-yellow);
-}
 
-.about_me_body {
+.about_me_body  {
   display: flex;
   flex-direction: row;
   flex: 1;
 }
+
 
 .about_me_image {
   display: flex;
@@ -68,6 +65,16 @@
   flex: 1;
 }
 
+.about_me_skills{
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
 .abt_head {
   font-size: 12px;
   color: var(--p-yellow);
@@ -82,7 +89,7 @@
 }
 
 .abt_p {
-  font-size: 13px;
+  font-size: 17px;
 }
 
 .learn_btn {
@@ -96,32 +103,75 @@
   font-size: 14px;
 }
 
-@media (min-width: 350px) and (max-width: 580px) {
-  .about_me_nav {
-    width: 100%;
-    font-size: 12px;
-  }
+.communication{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--p-blue3);
+}
+
+.skill{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+}
+
+.skill_name{
+  font-size: 15px;
+}
+
+.skill_percentage{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+}
+
+.skill_bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar1{
+  background-color: var(--p-yellow);
+  height: 10px;
+  width: 160px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.bar2{
+  background-color:var(--p-white);
+  height: 10px;
+  width: 40px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+@media  (max-width: 1000px) {
   .about_me_image {
     display: none;
   }
-}
-
-@media (min-width: 600px) and (max-width: 800px) {
-  .about_me_nav {
-    width: 100%;
-    font-size: 12px;
-  }
-  .about_me_image img {
-    height: 300px;
+  .about_me_skills{
+    column-gap: 20px;
   }
 }
 
-@media (min-width: 801px) and (max-width: 1027px) {
-  .about_me_nav {
-    width: 100%;
-    font-size: 12px;
+@media  (min-width: 1400px) {
+  .about_me_skills{
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  .about_me_image img {
-    height: 200px;
+}
+
+@media  (min-width: 1600px) {
+  .about_me_skills{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

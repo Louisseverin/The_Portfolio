@@ -1,8 +1,8 @@
 :root {
-  --p-yellow: rgb(246, 208, 127);
+  --p-yellow: rgba(255, 195, 65, 0.6);
   --p-blue1: rgb(50, 57, 99);
   --p-blue2: rgb(25, 28, 43);
   --p-blue3: rgb(32, 36, 53);
-  --p-white: rgb(245, 243, 238);
-  --p-trans: rgb(50, 57, 99, 0.8);
+  --p-white: rgb(255, 255, 255, 0.7);
+  --p-trans: rgb(50, 57, 99, 0.9);
 }

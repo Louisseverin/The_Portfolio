@@ -100,52 +100,6 @@ a{
   color: var(--p-blue3);
 }
 
-/* @media (min-width: 350px) and (max-width: 580px) {
-  .chat_btn {
-    font-size: 8px;
-    width: 75px;
-    height: 30px;
-  }
-  .logo_text,
-  .nav_content,
-  .nav_default_txt {
-    font-size: 8px;
-    color: var(--p-white);
-  }
-  .nav_content,
-  .nav_default {
-    width: 50px;
-    background-color: var(--p-blue1);
-    border-style: solid;
-    border-radius: 6px;
-    border-width: 1px;
-    border-color: var(--p-yellow);
-  }
-
-  .nav_content:hover,
-  .nav_default:hover {
-    background-color: var(--p-yellow);
-    color: var(--p-blue1);
-  }
-  .nav_link {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    height: fit-content;
-    width: fit-content;
-    gap: 10px;
-    position: relative;
-  }
-  .chat_board {
-    display: none;
-  }
-  .nav_default_img {
-    display: none;
-  }
-  .nav_default_txt {
-    margin-top: 0px;
-  }
-} */
 
 @media (max-width: 800px) {
   .chat_board{
@@ -165,14 +119,14 @@ a{
     justify-content: center;
     gap: 10px;
     top: 50px;
-    left: 0;
     right: 0;
-    width: 100vw;
-    height: 300px;
+    width: 35%;
+    height: 400px;
     background-color: var(--p-trans);
     transition: 0.5s;
     opacity: 0;
     overflow: hidden;
+    border-bottom-left-radius: 20px;
   }
   .nav_link.active{
     opacity: 1;

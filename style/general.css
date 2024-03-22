@@ -1,6 +1,7 @@
 body {
-  padding-left: 120px;
-  padding-right: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--p-blue2);
   color: var(--p-white);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -10,7 +11,7 @@ body {
 .large_display {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   align-items: center;
   justify-content: center;
   gap: 15px;

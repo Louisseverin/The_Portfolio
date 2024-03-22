@@ -107,7 +107,7 @@ a{
   }
   .dropbtn{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: fit-content;
     align-items: center;
   }
@@ -122,13 +122,15 @@ a{
     right: 0;
     width: 35%;
     height: 400px;
-    background-color: var(--p-trans);
     transition: 0.5s;
     opacity: 0;
     overflow: hidden;
     border-bottom-left-radius: 20px;
   }
-  .nav_link.active{
+  .nav_link.active1{
     opacity: 1;
+  }
+  .active1{
+    background-color: var(--p-trans);
   }
 }

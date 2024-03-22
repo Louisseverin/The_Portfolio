@@ -61,3 +61,12 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 550px){
+  .name{
+    font-size: 33px;
+  }
+  .profile_img img{
+    height: 400px;
+  }
+}

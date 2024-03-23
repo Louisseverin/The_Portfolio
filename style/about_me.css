@@ -6,6 +6,7 @@
   flex-direction: column;
   max-width: 1920px;
   gap: 10px;
+  border-radius: 15px;
 }
 
 .about_me_nav {
@@ -39,6 +40,7 @@
 
 .about_me_body  {
   display: flex;
+  padding: 15px;
   flex-direction: row;
   flex: 1;
 }
@@ -70,6 +72,7 @@
   align-items: center;
   padding: 10px;
   display: grid;
+  width: 60%;
   grid-template-columns: 1fr 1fr;
   column-gap: 10px;
   row-gap: 10px;
@@ -155,23 +158,109 @@
   border-bottom-right-radius: 3px;
 }
 
-@media  (max-width: 1000px) {
+
+.clients_img {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 60%;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.clients_pic img {
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* @media  (max-width: 400px){
   .about_me_image {
     display: none;
   }
   .about_me_skills{
     column-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .clients_img{
+    grid-template-columns: 1fr 1fr;
+  }
+  .clients_pic img {
+    height: 100px;
+  }
+  .about_me_body {
+    align-items: center;
+    justify-content: center;
+  }
+} */
+
+@media (min-width: 380px) and (max-width: 600px){
+  .about_me_image {
+    display: none;
+  }
+  .about_me_skills{
+    column-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .clients_img{
+    grid-template-columns: 1fr 1fr;
+  }
+  .clients_pic img {
+    height: 100px;
+  }
+  .about_me_body {
+    align-items: center;
+    justify-content: center;
   }
 }
 
-@media  (min-width: 1400px) {
+@media  (min-width: 601px) and (max-width: 800px){
+  .about_me_image {
+    display: none;
+  }
   .about_me_skills{
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .clients_img{
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .clients_pic img {
+    height: 150px;
+  }
+  .about_me_body {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-@media  (min-width: 1600px) {
+
+@media  (min-width: 801px) and (max-width: 1000px) {
+  .about_me_image {
+    display: none;
+  }
   .about_me_skills{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .clients_img{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .clients_pic img {
+    height: 200px;
+  }
+  .about_me_body {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media  (min-width: 1001px) and (max-width: 1300px){
+  .about_me_image img {
+    height: 250px;
+  }
+  .clients_pic img {
+    height: 100px;
   }
 }

@@ -7,6 +7,7 @@ hamburger.onclick = function(){
 document.addEventListener("DOMContentLoaded", function() {
     const aboutDiv = document.getElementById("about_me");
     const skillsDiv = document.getElementById("my_skills");
+    const clientsDiv = document.getElementById("my_clients");
     const mainContent = document.getElementById("main-content");
     
     function removeActiveClass() {
@@ -164,5 +165,22 @@ document.addEventListener("DOMContentLoaded", function() {
       </div>
     </div>`;
     });
+    
+    clientsDiv.addEventListener("click", function() {
+      removeActiveClass();
+      clientsDiv.classList.add('active');
+      mainContent.innerHTML = `
+      <div class="about_me_image">
+        <img src="icons/businessman-clients-portfolio-svgrepo-com.png" />
+      </div>
+      <div class="clients_img">
+        <div class="clients_pic"><img src="images/1.png" /></div>
+          <div class="clients_pic"><img src="images/2.png" /></div>
+          <div class="clients_pic"><img src="images/3.png" /></div>
+          <div class="clients_pic"><img src="images/4.png" /></div>
+          <div class="clients_pic"><img src="images/5.png" /></div>
+          <div class="clients_pic"><img src="images/6.png" /></div>
+      </div>`;
+      });
     
   });

@@ -1,23 +1,23 @@
 hamburger = document.querySelector(".dropbtn");
-hamburger.onclick = function(){
-    navBar = document.querySelector(".nav_link");
-    navBar.classList.toggle("active1");
-}
+hamburger.onclick = function () {
+  navBar = document.querySelector(".nav_link");
+  navBar.classList.toggle("active1");
+};
 
-document.addEventListener("DOMContentLoaded", function() {
-    const aboutDiv = document.getElementById("about_me");
-    const skillsDiv = document.getElementById("my_skills");
-    const clientsDiv = document.getElementById("my_clients");
-    const mainContent = document.getElementById("main-content");
-    
-    function removeActiveClass() {
-        const navItems = document.querySelectorAll('.about_me_nav_link');
-        navItems.forEach(item => {
-          item.classList.remove('active');
-        });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const aboutDiv = document.getElementById("about_me");
+  const skillsDiv = document.getElementById("my_skills");
+  const clientsDiv = document.getElementById("my_clients");
+  const mainContent = document.getElementById("main-content");
 
-    mainContent.innerHTML = `<div class="about_me_image">
+  function removeActiveClass() {
+    const navItems = document.querySelectorAll(".about_me_nav_link");
+    navItems.forEach((item) => {
+      item.classList.remove("active");
+    });
+  }
+
+  mainContent.innerHTML = `<div class="about_me_image">
       <img src="icons/man-with-computer-and-headset-svgrepo-com.png" />
     </div>
     <div class="about_me_txt">
@@ -33,11 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
         while my collaborative mindset and strong communication skills enable effective teamwork and project alignment.
       </p>
     </div>`;
-    
 
-    aboutDiv.addEventListener("click", function() {
+  aboutDiv.addEventListener("click", function () {
     removeActiveClass();
-    aboutDiv.classList.add('active');
+    aboutDiv.classList.add("active");
     mainContent.innerHTML = `<div class="about_me_image">
     <img src="icons/man-with-computer-and-headset-svgrepo-com.png" />
     </div>
@@ -54,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function() {
         while my collaborative mindset and strong communication skills enable effective teamwork and project alignment.
       </p>
     </div>`;
-    });
-    
-    skillsDiv.addEventListener("click", function() {
+  });
+
+  skillsDiv.addEventListener("click", function () {
     removeActiveClass();
-    skillsDiv.classList.add('active');  
+    skillsDiv.classList.add("active");
     mainContent.innerHTML = `<div class="about_me_image">
     <img src="icons/skills.png" />
     </div>
@@ -164,23 +163,23 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
       </div>
     </div>`;
-    });
-    
-    clientsDiv.addEventListener("click", function() {
-      removeActiveClass();
-      clientsDiv.classList.add('active');
-      mainContent.innerHTML = `
+  });
+
+  clientsDiv.addEventListener("click", function () {
+    removeActiveClass();
+    clientsDiv.classList.add("active");
+    mainContent.innerHTML = `
       <div class="about_me_image">
-        <img src="icons/businessman-clients-portfolio-svgrepo-com.png" />
+        <img src="icons/users-svgrepo-com.png" />
+        <p style="font-family: 'robot', sans-serif; font-size: 30px; color: var(--p-yellow);">CLIENTS</p>
       </div>
       <div class="clients_img">
-        <div class="clients_pic"><img src="images/1.png" /></div>
-          <div class="clients_pic"><img src="images/2.png" /></div>
-          <div class="clients_pic"><img src="images/3.png" /></div>
-          <div class="clients_pic"><img src="images/4.png" /></div>
-          <div class="clients_pic"><img src="images/5.png" /></div>
-          <div class="clients_pic"><img src="images/6.png" /></div>
+        <div class="clients_pic"><img src="icons/logo/walmart-logo-svgrepo-com.png" /></div>
+        <div class="clients_pic"><img src="icons/logo/bmw-logo-svgrepo-com.png" /></div>
+        <div class="clients_pic"><img src="icons/logo/mcdonald-s-15-logo-svgrepo-com.svg" /></div>
+        <div class="clients_pic"><img src="icons/logo/akamai-svgrepo-com.png" /></div>
+        <div class="clients_pic"><img src="icons/logo/volkswagen-10-logo-svgrepo-com.png" /></div>
+        <div class="clients_pic"><img src="icons/logo/windows-windows-svgrepo-com.png" /></div>
       </div>`;
-      });
-    
   });
+});

@@ -183,3 +183,32 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>`;
   });
 });
+
+let currentIndex = 0;
+const blogs = document.querySelectorAll('.bcontent');
+
+function showBlogs(startIndex) {
+  for (let i = 0; i < blogs.length; i++) {
+    if (i >= startIndex && i < startIndex + 3) {
+      blogs[i].style.display = 'block';
+    } else {
+      blogs[i].style.display = 'none';
+    }
+  }
+}
+
+function nextBlog() {
+  if (currentIndex + 3 < blogs.length) {
+    currentIndex += 3;
+    showBlogs(currentIndex);
+  }
+}
+
+function prevBlog() {
+  if (currentIndex - 3 >= 0) {
+    currentIndex -= 3;
+    showBlogs(currentIndex);
+  }
+}
+
+showBlogs(currentIndex);

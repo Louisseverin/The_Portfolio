@@ -1,0 +1,98 @@
+.contacts{
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_head p{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.contact_section{
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.contact_sms{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--p-blue3);
+    border-radius: 20px;
+}
+
+.contact_sms_head{
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.name_,
+.email_{
+    width: 80%;
+    height: 70px;
+    background-color: var(--p-blue2);
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: var(--p-white);
+    text-align: center;
+    font-size: 20px;
+}
+
+.message_{
+    width: 80%;
+    height: 140px;
+    background-color: var(--p-blue2);
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: var(--p-white);
+    font-size: 17px;
+}
+
+.submit_btn{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: var(--p-yellow);
+    color: var(--p-blue2);
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .contact_section{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact_sms{
+        width: 100%;
+    }
+}

@@ -184,12 +184,42 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// let currentIndex = 0;
+// const blogs = document.querySelectorAll('.bcontent');
+
+// function showBlogs(startIndex) {
+//   for (let i = 0; i < blogs.length; i++) {
+//     if (i >= startIndex && i < startIndex + 3) {
+//       blogs[i].style.display = 'block';
+//     } else {
+//       blogs[i].style.display = 'none';
+//     }
+//   }
+// }
+
+// function nextBlog() {
+//   if (currentIndex + 3 < blogs.length) {
+//     currentIndex += 3;
+//     showBlogs(currentIndex);
+//   }
+// }
+
+// function prevBlog() {
+//   if (currentIndex - 3 >= 0) {
+//     currentIndex -= 3;
+//     showBlogs(currentIndex);
+//   }
+// }
+
+// showBlogs(currentIndex);
+
 let currentIndex = 0;
+let numBlogsToShow = getNumBlogsToShow();
 const blogs = document.querySelectorAll('.bcontent');
 
 function showBlogs(startIndex) {
   for (let i = 0; i < blogs.length; i++) {
-    if (i >= startIndex && i < startIndex + 3) {
+    if (i >= startIndex && i < startIndex + numBlogsToShow) {
       blogs[i].style.display = 'block';
     } else {
       blogs[i].style.display = 'none';
@@ -198,17 +228,70 @@ function showBlogs(startIndex) {
 }
 
 function nextBlog() {
-  if (currentIndex + 3 < blogs.length) {
-    currentIndex += 3;
+  if (currentIndex + numBlogsToShow < blogs.length) {
+    currentIndex += numBlogsToShow;
     showBlogs(currentIndex);
   }
 }
 
 function prevBlog() {
-  if (currentIndex - 3 >= 0) {
-    currentIndex -= 3;
+  if (currentIndex - numBlogsToShow >= 0) {
+    currentIndex -= numBlogsToShow;
     showBlogs(currentIndex);
   }
 }
 
+function getNumBlogsToShow() {
+  return window.innerWidth < 1000 ? 1 : 3;
+}
+
+window.addEventListener('resize', function() {
+  const newNumBlogsToShow = getNumBlogsToShow();
+  if (newNumBlogsToShow !== numBlogsToShow) {
+    numBlogsToShow = newNumBlogsToShow;
+    showBlogs(currentIndex);
+  }
+});
+
 showBlogs(currentIndex);
+
+
+function validateForm() {
+  var name = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var message = document.getElementById("message").value.trim();
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (name === "") {
+      alert("Please enter your name");
+      return false;
+  }
+
+  if (email === "") {
+      alert("Please enter your email");
+      return false;
+  } else if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address");
+      return false;
+  }
+
+  if (message === "") {
+      alert("Please enter your message");
+      return false;
+  }
+
+  // If all validations pass, the form will be submitted
+  return true;
+}
+
+function scrollToDiv(id) {
+  var element = document.getElementById(id);
+  var offset = element.offsetTop - 50; // Adjust offset as needed
+
+  window.scrollTo({
+      top: offset,
+      behavior: 'smooth'
+  });
+
+  event.preventDefault();
+}

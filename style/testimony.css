@@ -1,31 +1,28 @@
 .test_container {
   right: 0;
   left: 0;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 50px;
   height: fit-content;
   padding-bottom: 40px;
   background-color: var(--p-blue3);
   width: 100%;
-  max-width: 1920px;
 }
 .testimony_head {
   width: 100%;
   height: 150px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.testimony_head_txt {
-  width: 350px;
-  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .t_txt1 {
-  font-size: 12px;
-  margin-bottom: -30px;
+  font-size: 22px;
+  font-weight: 700;
   color: var(--p-yellow);
 }
 
@@ -35,36 +32,11 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-.testimony_head_btn {
-  width: 90px;
-  justify-content: center;
-  align-self: center;
-}
-
-.tleft_btn,
-.tright_btn {
-  height: 40px;
-  width: 40px;
-  background-color: transparent;
-  border-color: var(--p-yellow);
-  border-radius: 2px;
-  border-width: 1px;
-  cursor: pointer;
-}
-
-.tleft_btn img,
-.tright_btn img {
-  height: 22px;
-}
-
-.tright_btn {
-  margin-left: -5px;
-}
-
 .testimony {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .test_content {
@@ -73,6 +45,7 @@
   background-color: var(--p-blue1);
   height: fit-content;
   flex: 1;
+  max-width: 500px;
   padding: 25px;
   border: 1px solid var(--p-yellow);
   border-radius: 4px;
@@ -130,31 +103,9 @@
   font-style: italic;
 }
 
-@media (min-width: 350px) and (max-width: 580px) {
+@media  (max-width: 700px) {
   .testimony {
-    gap: 10px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .t_txt1 {
-    font-size: 12px;
-    margin-bottom: -10px;
-    color: var(--p-yellow);
-  }
-  .t_txt2 {
-    font-size: 22px;
-  }
-  .testimony_head_btn {
-    display: flex;
-    flex-direction: column;
-  }
-  .tright_btn {
-    margin-left: 0px;
-  }
-  .test_head_txt {
-    flex: 1;
-    margin-top: 8px;
-    margin-left: 15px;
+    gap: 20px;
   }
 }

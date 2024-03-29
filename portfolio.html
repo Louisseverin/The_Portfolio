@@ -16,38 +16,42 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/projects.css">
     <link rel="stylesheet" href="style/blogs.css">
+    <link rel="stylesheet" href="style/contactus.css">
   </head>
   <body>
     <!-- The header navigation bar -->
+    <header class="navigation">
+      <div class="logo">
+        <div class="logo_img">
+          <img src="icons/logo.png" />
+        </div>
+        <div class="logo_text">Growth</div>
+      </div>
+      
+        <ul class="nav_link" id="dropdownContent">
+          <li><a href="#" class="nav_content" onclick="scrollToDiv('home')">HOME</a></li>
+          <li><a href="#" class="nav_content" onclick="scrollToDiv('about')">ABOUT ME</a></li>
+          <li><a href="#" class="nav_content" onclick="scrollToDiv('skills')">SKILLS</a></li>
+          <li><a href="#" class="nav_content" onclick="scrollToDiv('project')">PROJECTS</a></li>
+          <li><a href="#" class="nav_content" onclick="scrollToDiv('testimony')">TESTIMONIALS</a></li>
+          <li><a href="#" class="nav_content" onclick="scrollToDiv('blogs')">BLOGS</a></li>
+          <li><a href="#" class="nav_content" onclick="scrollToDiv('contacts')">CONTACT US</a></li>
+        </ul>
+
+        <div class="dropbtn" id="dropdownBtn">
+          <img src="icons/menu-svgrepo-com.png">
+        </div>
+
+
+      <div class="chat_board">
+        <button class="chat_btn">LET'S CHAT</button>
+      </div>
+    </header>
+
     <div class="large_display">
-      <header class="navigation">
-        <div class="logo">
-          <div class="logo_img">
-            <img src="icons/logo.png" />
-          </div>
-          <div class="logo_text">Growth</div>
-        </div>
-
-          <ul class="nav_link" id="dropdownContent">
-            <li><a href="#" class="nav_content">HOME</a></li>
-            <li><a href="#" class="nav_content">WORKS</a></li>
-            <li><a href="#" class="nav_content">CASE STUDY</a></li>
-            <li><a href="#" class="nav_content">CLIENTS</a></li>
-            <li><a href="#" class="nav_content">CONTACT</a></li>
-          </ul>
-
-          <div class="dropbtn" id="dropdownBtn">
-            <img src="icons/menu-svgrepo-com.png">
-          </div>
-
-
-        <div class="chat_board">
-          <button class="chat_btn">LET'S CHAT</button>
-        </div>
-      </header>
 
       <!-- Profile Section-->
-      <div class="profile">
+      <div id="home" class="profile">
         <div class="profile_img">
           <img src="images/Clipped_image_20240321_181343.png" />
         </div>
@@ -61,18 +65,23 @@
       
 
       <!-- About Me Section -->
-      <div class="about_me">
-        <div class="about_me_nav">
-          <div class="about_me_nav_link active" id="about_me">ABOUT ME</div>
-          <div class="about_me_nav_link" id="my_skills">MY SKILLS</div>
-          <div class="about_me_nav_link" id="my_clients">MY CLIENTS</div>
+      <div id="about" class="about">
+        <div class="core_skills_head">
+          <p>ABOUT ME</p>
         </div>
-        <div class="about_me_body" id="main-content"></div>
+        <div class="about_me">
+          <div class="about_me_nav">
+            <div class="about_me_nav_link active" id="about_me">ABOUT ME</div>
+            <div class="about_me_nav_link" id="my_skills">MY SKILLS</div>
+            <div class="about_me_nav_link" id="my_clients">MY CLIENTS</div>
+          </div>
+          <div class="about_me_body" id="main-content"></div>
+        </div>
       </div>
-
+      
       
       <!-- Core Skills Section -->
-      <div class="core_skills">
+      <div id="skills" class="core_skills">
         <div class="core_skills_head">
             <p>CORE-SKILLS</p>
         </div>
@@ -111,82 +120,54 @@
 
 
        <!-- project Section -->
-       <div class="projects">
+      <div id="project" class="projects">
         <div class="projects_head">
             <p>PROJECTS</p>
         </div>
         <div class="projects_content">
           <div class="project_card">
-            <img src="images/p1.avif">
+            <img src="images/pr1.webp">
             <div class="project_text">
             <p class="project_name">LOGO DESIGN</p>
-            <p class="project_desc">sldhfglsdh dlfjgsdh sdlfsldh kdsfdsfh sfkldhsdhfn 
-              dsflgshdf sdjgfsd hd sjghd sjghdv sjdv</p>
+            <p class="project_desc">The site highlights various projects with sleek animations and a minimalist design.
+              It includes sections for services offered, client testimonials, and a contact form.</p>
           </div>
           </div>
 
           <div class="project_card">
-            <img src="images/p1.avif">
+            <img src="images/pr2.jpg">
             <div class="project_text">
-            <p class="project_name">LOGO DESIGN</p>
-            <p class="project_desc">sldhfglsdh dlfjgsdh sdlfsldh kdsfdsfh sfkldhsdhfn 
-              dsflgshdf sdjgfsd hd sjghd sjghdv sjdv</p>
+            <p class="project_name">WELLNESS</p>
+            <p class="project_desc">The website features a calming color scheme, beautiful typography, 
+              and high-quality images of nature, healthy food, and people practicing yoga or exercising.</p>
           </div>
           </div>
 
           <div class="project_card">
-            <img src="images/p1.avif">
+            <img src="images/pr3.jpg">
             <div class="project_text">
-            <p class="project_name">LOGO DESIGN</p>
-            <p class="project_desc">sldhfglsdh dlfjgsdh sdlfsldh kdsfdsfh sfkldhsdhfn 
-              dsflgshdf sdjgfsd hd sjghd sjghdv sjdv</p>
+            <p class="project_name">GRAPHIC DESIGN</p>
+            <p class="project_desc"> The portfolio features a creative layout with dynamic grid arrangements, 
+              interactive elements, and high-resolution images of design projects.</p>
           </div>
           </div>
 
           <div class="project_card">
-            <img src="images/p1.avif">
+            <img src="images/pr4.webp">
             <div class="project_text">
-            <p class="project_name">LOGO DESIGN</p>
-            <p class="project_desc">sldhfglsdh dlfjgsdh sdlfsldh kdsfdsfh sfkldhsdhfn 
-              dsflgshdf sdjgfsd hd sjghd sjghdv sjdv</p>
-          </div>
-          </div>
-
-          <div class="project_card">
-            <img src="images/p1.avif">
-            <div class="project_text">
-            <p class="project_name">LOGO DESIGN</p>
-            <p class="project_desc">sldhfglsdh dlfjgsdh sdlfsldh kdsfdsfh sfkldhsdhfn 
-              dsflgshdf sdjgfsd hd sjghd sjghdv sjdv</p>
-          </div>
-          </div>
-
-          <div class="project_card">
-            <img src="images/p1.avif">
-            <div class="project_text">
-            <p class="project_name">LOGO DESIGN</p>
-            <p class="project_desc">sldhfglsdh dlfjgsdh sdlfsldh kdsfdsfh sfkldhsdhfn 
-              dsflgshdf sdjgfsd hd sjghd sjghdv sjdv</p>
+            <p class="project_name">TRAVEL</p>
+            <p class="project_desc">The website includes stunning travel photography, engaging travel stories, 
+              and an interactive map highlighting travel destinations.</p>
           </div>
           </div>
         </div>
       </div>
       
       <!--Testimony Section-->
-      <div class="test_container">
+      <div id="testimony" class="test_container">
         <div class="testimony_head">
-          <div class="testimony_head_txt">
             <p class="t_txt1">TESTIMONIALS</p>
             <p class="t_txt2">Happy Clients Says</p>
-          </div>
-          <div class="testimony_head_btn">
-            <button class="tleft_btn">
-              <img src="icons/left-arw.png" />
-            </button>
-            <button class="tright_btn">
-              <img src="icons/right-arrow2.png" />
-            </button>
-          </div>
         </div>
         <div class="testimony">
           <div class="test_content">
@@ -235,169 +216,167 @@
       </div>
 
       <!-- Blogs Section -->
-      <div class="blogs">
+      <div id="blogs" class="blogs">
         <div class="blogs_head">
             <p>BLOGS</p>
-            <div class="b_btn">
-              <button onclick="prevBlog()" class="b_btn_left">
-                <img src="icons/left-arw.png" />
-              </button>
-              <button onclick="nextBlog()" class="b_btn_right">
-                <img src="icons/right-arrow2.png" />
-              </button>
-            </div>
         </div>
-        <div class="blog_content">
-          <div class="bcontent">
-            <img src="icons/logo/reactjs-svgrepo-com.png">
-            <p class="b_name">React JS</p>
-            <p class="b_desc">
-              Experienced in building scalable, responsive web apps. 
-              Strong in modular design, state management, and performance optimization. 
-              Skilled in API integration and testing. 
-              Ready to elevate your projects with React.js expertise.
-            </p>
+        <div class="blog_section">
+          <div class="b_btn">
+            <button onclick="prevBlog()" class="b_btn_left">
+              <img src="icons/left-arw.png" />
+            </button>
           </div>
-          <div class="bcontent">
-            <img src="icons/logo/nodejs-icon-logo-svgrepo-com.png" alt="">
-            <p class="b_name">Node JS</p>
-            <p class="b_desc">
-              Experienced in building scalable, responsive web apps. 
-              Strong in modular design, state management, and performance optimization. 
-              Skilled in API integration and testing. 
-              Ready to elevate your projects with React.js expertise.
-            </p>
+          <div class="blog_content">
+            <div class="bcontent">
+              <img src="images/foot3.webp">
+              <p class="b_name">Jude Bellingham</p>
+              <p class="b_desc">
+                Bellingham has already shown enough to convince the world of 
+                his obscene talent at Dortmund, Real Madrid and on the international stage.
+              </p>
+            </div>
+            <div class="bcontent">
+              <img src="images/foot4.webp" alt="">
+              <p class="b_name">Harry Kane</p>
+              <p class="b_desc">
+                For context, that total would have 
+                won the Golden Boot in seven Premier League seasons.
+              </p>
+            </div>
+            <div class="bcontent">
+              <img src="images/foot6.webp">
+              <p class="b_name">Erling Haaland</p>
+              <p class="b_desc">
+                The Codrops web designing blog is a 
+                haven for experimentation in front-end design.</p>
+            </div>
+            <div class="bcontent">
+              <img src="images/foot1.webp">
+              <p class="b_name">Lionel Messi</p>
+              <p class="b_desc">
+                For the first time in over a decade, 
+                we were sincerely forced to ponder our No.1 selection.</p>
+            </div>
+            <div class="bcontent">
+              <img src="images/foot2.webp">
+              <p class="b_name">Kevin De Bruyne</p>
+              <p class="b_desc">
+                created 22 goals and scored nine in 
+                42 matches across the Premier League and Champions League combined.</p>
+            </div>
+            <div class="bcontent">
+              <img src="images/foot5.webp">
+              <p class="b_name">Kylian Mbappe</p>
+              <p class="b_desc">
+                Mbappé's international heroics prove his ability 
+                and mentality beyond all reasonable doubt.</p>
+            </div>
           </div>
-          <div class="bcontent">
-            <img src="icons/logo/csharp2-svgrepo-com.png">
-            <p class="b_name">C Sharp</p>
-            <p class="b_desc">
-              Experienced in building scalable, responsive web apps. 
-              Strong in modular design, state management, and performance optimization. 
-              Skilled in API integration and testing. 
-              Ready to elevate your projects with React.js expertise.</p>
-          </div>
-          <div class="bcontent">
-            <img src="icons/logo/csharp2-svgrepo-com.png">
-            <p class="b_name">C Sharp</p>
-            <p class="b_desc">
-              Experienced in building scalable, responsive web apps. 
-              Strong in modular design, state management, and performance optimization. 
-              Skilled in API integration and testing. 
-              Ready to elevate your projects with React.js expertise.</p>
-          </div>
-          <div class="bcontent">
-            <img src="icons/logo/csharp2-svgrepo-com.png">
-            <p class="b_name">C Sharp</p>
-            <p class="b_desc">
-              Experienced in building scalable, responsive web apps. 
-              Strong in modular design, state management, and performance optimization. 
-              Skilled in API integration and testing. 
-              Ready to elevate your projects with React.js expertise.</p>
-          </div>
-          <div class="bcontent">
-            <img src="icons/logo/reactjs-svgrepo-com.png">
-            <p class="b_name">C Sharp</p>
-            <p class="b_desc">
-              Experienced in building scalable, responsive web apps. 
-              Strong in modular design, state management, and performance optimization. 
-              Skilled in API integration and testing. 
-              Ready to elevate your projects with React.js expertise.</p>
+          <div class="b_btn">
+            <button onclick="nextBlog()" class="b_btn_right">
+              <img src="icons/right-arrow2.png" />
+            </button>
           </div>
         </div>
       </div>
 
 
-   
-      <!--Social-Media Section-->
-      <div class="social-media">
-        <div class="social-media_txt1">SOCIAL MEDIA</div>
-        <div class="social-media_txt2">Let's Be Friends</div>
-        <div class="social-media_content">
-          <div class="sm-content">
-            <div class="sm-content_txt">
-              <div class="sm-content_txt_name">Linkedin</div>
-              <div class="sm-content_txt_desc">Profession social profile</div>
-            </div>
-            <div class="sm-content_img">
-              <img src="icons/linkedin-svgrepo-com.png" />
-            </div>
-          </div>
-          <div class="sm-content">
-            <div class="sm-content_txt">
-              <div class="sm-content_txt_name">Dribbble</div>
-              <div class="sm-content_txt_desc">Design work social profile</div>
-            </div>
-            <div class="sm-content_img">
-              <img src="icons/dribble-svgrepo-com.png" />
-            </div>
-          </div>
-          <div class="sm-content">
-            <div class="sm-content_txt">
-              <div class="sm-content_txt_name">Instagram</div>
-              <div class="sm-content_txt_desc">
-                Image base social communications
+      <!--Contact Us Section-->
+      <div id="contacts" class="contacts">
+        <div class="contact_head">
+          <p>CONTACT US</p>
+        </div>
+        <div class="contact_section">
+          <div class="social-media">
+            <div class="social-media_txt1">SOCIAL MEDIA</div>
+            <div class="social-media_txt2">Let's Be Friends</div>
+            <div class="social-media_content">
+              <div class="sm-content">
+                <div class="sm-content_txt">
+                  <div class="sm-content_txt_name">Linkedin</div>
+                  <div class="sm-content_txt_desc">Profession social profile</div>
+                </div>
+                <div class="sm-content_img">
+                  <img src="icons/linkedin-svgrepo-com.png" />
+                </div>
+              </div>
+              <div class="sm-content">
+                <div class="sm-content_txt">
+                  <div class="sm-content_txt_name">Instagram</div>
+                  <div class="sm-content_txt_desc">
+                    Image base social communications
+                  </div>
+                </div>
+                <div class="sm-content_img">
+                  <img src="icons/instagram-svgrepo-com.png" />
+                </div>
+              </div>
+              <div class="sm-content">
+                <div class="sm-content_txt">
+                  <div class="sm-content_txt_name">Twitter</div>
+                  <div class="sm-content_txt_desc">Random thoughts</div>
+                </div>
+                <div class="sm-content_img">
+                  <img src="icons/twitter-boxed-svgrepo-com.png" />
+                </div>
+              </div>
+              <div class="sm-content">
+                <div class="sm-content_txt">
+                  <div class="sm-content_txt_name">WhatsApp</div>
+                  <div class="sm-content_txt_desc">Quick Text</div>
+                </div>
+                <div class="sm-content_img">
+                  <img src="icons/whatsapp-svgrepo-com3.png" />
+                </div>
               </div>
             </div>
-            <div class="sm-content_img">
-              <img src="icons/instagram-svgrepo-com.png" />
-            </div>
           </div>
-          <div class="sm-content">
-            <div class="sm-content_txt">
-              <div class="sm-content_txt_name">Twitter</div>
-              <div class="sm-content_txt_desc">Random thoughts</div>
-            </div>
-            <div class="sm-content_img">
-              <img src="icons/twitter-boxed-svgrepo-com.png" />
-            </div>
+          <div class="contact_sms">
+            <p class="contact_sms_head">Send us a quick message.</p>
+            <form class="form_container" id="contactForm" onsubmit="return validateForm()">
+              <input class="name_" type="text" id="name" placeholder="Your Name" required>
+              <input class="email_" type="email" id="email" placeholder="Your Email" required>
+              <textarea class="message_" id="message" placeholder="Your Message" required></textarea>
+              <div><button class="submit_btn" type="submit">Submit</button></div>
+          </form>
           </div>
-          <div class="sm-content">
-            <div class="sm-content_txt">
-              <div class="sm-content_txt_name">Medium</div>
-              <div class="sm-content_txt_desc">Work case study</div>
-            </div>
-            <div class="sm-content_img">
-              <img src="icons/medium-m-svgrepo-com.png" />
-            </div>
-          </div>
-          <div class="sm-content">
-            <div class="sm-content_txt">
-              <div class="sm-content_txt_name">Email</div>
-              <div class="sm-content_txt_desc">hello@growth.digital</div>
-            </div>
-            <div class="sm-content_img">
-              <img src="icons/email-svgrepo-com (1).png" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Footer Section-->
-      <div class="footer">
-        <div class="footer_logo">
-          <div class="footer_logo_img">
-            <img src="icons/logo.png" />
-          </div>
-          <div class="footer_logo_text">Growth</div>
-        </div>
-        <div class="footer_content">
-          <div class="footer_content_head">Let's Talk?</div>
-          <div class="footer_content_nav">
-            <div class="ft_nav_content">ABOUT</div>
-            <div class="ft_nav_content">WORKS</div>
-            <div class="ft_nav_content">CASE STUDY</div>
-            <div class="ft_nav_content">CLIENTS</div>
-            <div class="ft_nav_content">CONTACT</div>
-          </div>
-          <div class="footer_content_ft">
-            &copy; 2019 Growth, Barnard St.Savannah, GA 3140
-          </div>
-        </div>
-        <div class="footer_btn">
-          <button class="ft_chat_btn">LET'S CHAT</button>
         </div>
       </div>
     </div>
+
+    <!--Footer Section-->
+    <footer class="footer">
+      <div class="footer_logo">
+        <div class="footer_logo_img">
+          <img src="icons/logo.png" />
+          <div class="footer_logo_text">LOUIS <span class="name_edit">SEVERIN</span> </div>
+        </div>
+        <div class="dphone">
+          <img src="icons/phone-calling-rounded-svgrepo-com.png" alt="">
+          <div class="d_text">+1(581) 443 0282</div>
+        </div>
+        <div class="dmessage">
+          <img src="icons/message-square-list-svgrepo-com.png" alt="">
+          <div class="d_text">+1(581) 443 0282</div>
+        </div>
+      </div>
+      <div class="footer_content">
+        <div class="footer_content_head">Pages</div>
+        <ul class="footer_content_nav">
+          <li class="ft_nav_content">ABOUT</li>
+          <li class="ft_nav_content">WORKS</li>
+          <li class="ft_nav_content">CASE STUDY</li>
+          <li class="ft_nav_content">CLIENTS</li>
+          <li class="ft_nav_content">CONTACT</li>
+        </ul>
+        <div class="footer_content_ft">
+          &copy; 2024 Louis, 6 Dallyn Cres, Scarborough, Ontario, Canada M1K 4V9
+        </div>
+      </div>
+      <div class="footer_btn">
+        <button class="chat_btn">LET'S CHAT</button>
+      </div>
+    </footer>
 
     <script src="js/nav.js"></script>
   </body>
